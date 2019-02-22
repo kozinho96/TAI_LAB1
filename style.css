@@ -1,3 +1,9 @@
 body {
     background-color: aquamarine;
 }
+ul {
+    display: inline;
+}
+li {
+    display: inline;
+}
