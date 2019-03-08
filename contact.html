@@ -2,46 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tytuł_KK</title>
+    <title>Krzysztof Kozioł - Home Page</title>
     <link rel="Stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
 
 <div class="container">
-<ul class="nav">
-    <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Quiz</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="contact.html">Kontakt</a>
-    </li>
-</ul>
 
+    <div class="navbar">
 
-<form>
-    <div class="form-group">
-        <label for="name">Imię</label>
-        <input type="text" class="form-control" id="name"  placeholder="Podaj imię">
     </div>
 
+    <form>
 
         <div class="form-group">
-        <label for="lastName">Nazwisko</label>
-        <input type="text" class="form-control" id="lastName"  placeholder="Podaj nazwisko">
+            <label for="name">Imię</label>
+            <input type="text" class="form-control" id="name" placeholder="Podaj imię">
         </div>
 
+        <div class="form-group">
+            <label for="lastName">Nazwisko</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Podaj nazwisko">
+        </div>
 
-            <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="text" class="form-control" id="email"  placeholder="Podaj e-mail">
-            </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" class="form-control" id="email" placeholder="Podaj e-mail">
+        </div>
 
         <label for="name">Płeć</label>
         <div class="form-check">
@@ -58,21 +46,21 @@
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Opis</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="description">Opis</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
         </div>
 
-    <div class="form-group">
-        <label for="age">Wiek</label>
+        <div class="form-group">
+            <label for="age">Wiek</label>
             <input type="number" class="form-control" id="age" value="18">
-    </div>
-
+        </div>
 
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Stan cywilny</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="marital_status">Stan cywilny</label>
+            <select class="form-control" id="marital_status">
                 <option>Kawaler / Panna</option>
                 <option>Żonaty / Mężatka</option>
+                <option>Rozwiedziony / Rozwiedzona</option>
                 <option>Wdowiec / Wdowa</option>
             </select>
         </div>
@@ -80,8 +68,10 @@
         <button type="reset" class="btn btn-primary">Wyczyść</button>
         <button type="submit" class="btn btn-primary">Wyśjij</button>
 
-</form>
+    </form>
 </div>
 
+<footer class="center">Copyrights © Krzysztof Kozioł | 2019</footer>
+<script src="navbar.js"></script>
 </body>
 </html>

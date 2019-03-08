@@ -7,3 +7,10 @@ ul {
 li {
     display: inline;
 }
+.center {
+    text-align: center;
+}
+a {
+    padding-left: 10px;
+}
+
