@@ -1,15 +1,19 @@
 body {
     background-color: aquamarine;
 }
+
 ul {
     display: inline;
 }
+
 li {
     display: inline;
 }
+
 .center {
     text-align: center;
 }
+
 a {
     padding-left: 10px;
 }
