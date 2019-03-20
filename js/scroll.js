@@ -8,7 +8,7 @@ function goToTop() {
 }
 
 function showTopButton() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.querySelector(".scroll").style.display = "block";
     } else {
         document.querySelector(".scroll").style.display = "none";
