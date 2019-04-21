@@ -117,19 +117,19 @@ previous.addEventListener('click', function () {
 
 function saveScore() {
 
-    if (localStorage.getItem("quizScore") != null) {
+    if (localStorage.getItem("quizScore")) {
         let previousScore = JSON.parse(localStorage.getItem("quizScore"));
         let newScore = {
-            "totalPoints": previousScore.totalPoints + points,
-            "avgScore": (JSON.parse(localStorage.getItem("quizScore")).totalPoints + points) / (previousScore.numberOfGames + 1),
-            "numberOfGames": JSON.parse(localStorage.getItem("quizScore")).numberOfGames + 1
+            totalPoints: previousScore.totalPoints + points,
+            avgScore: (JSON.parse(localStorage.getItem("quizScore")).totalPoints + points) / (previousScore.numberOfGames + 1),
+            numberOfGames: JSON.parse(localStorage.getItem("quizScore")).numberOfGames + 1
         };
         localStorage.setItem("quizScore", JSON.stringify(newScore));
     } else {
         let newScore = {
-            "totalPoints": points,
-            "avgScore": points,
-            "numberOfGames": 1
+            totalPoints: points,
+            avgScore: points,
+            numberOfGames: 1
         };
         localStorage.setItem("quizScore", JSON.stringify(newScore));
     }
